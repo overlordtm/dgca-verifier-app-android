@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/codeReaderFragment"
-        android:name="dgca.verifier.app.android.CodeReaderFragment"
+        android:name="si.vakcin.pct.android.CodeReaderFragment"
         android:label="CodeReader"
         tools:layout="@layout/fragment_code_reader">
 
@@ -46,7 +46,7 @@
 
     <dialog
         android:id="@+id/verificationDialogFragment"
-        android:name="dgca.verifier.app.android.verification.VerificationDialogFragment"
+        android:name="si.vakcin.pct.android.verification.VerificationDialogFragment"
         android:label="Verification"
         tools:layout="@layout/dialog_fragment_verification">
 
@@ -60,7 +60,7 @@
     </dialog>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="dgca.verifier.app.android.settings.SettingsFragment"
+        android:name="si.vakcin.pct.android.settings.SettingsFragment"
         android:label="SettingsFragment" />
 
 </navigation>

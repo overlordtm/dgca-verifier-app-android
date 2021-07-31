@@ -21,7 +21,7 @@
   -->
 
 <resources>
-    <string name="app_name">Verifier App</string>
+    <string name="app_name">PCT Vakcin</string>
     <string name="cert_valid">Valid</string>
     <string name="cert_limited_validity">Limited validity</string>
     <string name="cert_invalid">Invalid</string>
@@ -36,6 +36,7 @@
     <string name="standardised_family_name_title">Standardised Family Name</string>
     <string name="standardised_given_name_title">Standardised Given Name</string>
     <string name="date_of_birth_title">Date of Birth</string>
+    <string name="age_title">Age</string>
     <string name="date_of_vaccination_title">Date of Vaccination</string>
     <string name="issuer_country">Issuer Country</string>
     <string name="target_disease">Target Disease</string>

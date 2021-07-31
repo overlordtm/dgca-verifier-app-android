@@ -38,7 +38,7 @@ class LocalConfigDataSource @Inject constructor(
     private lateinit var config: Config
 
     companion object {
-        const val DEFAULT_CONFIG_FILE = "verifier-context.jsonc"
+        const val DEFAULT_CONFIG_FILE = "verifier-context-demo.jsonc"
         const val CONFIG_FILE = "config.json"
     }
 

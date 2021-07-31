@@ -1,50 +1,50 @@
 {
-  "origin": "DE",
+  "origin": "SI",
   "versions": {
     "default": {
       "privacyUrl": "https://publications.europa.eu/en/web/about-us/legal-notices/eu-mobile-apps",
       "context": {
-        "url": "https://dgca-verifier-service-eu-acc.cfapps.eu10.hana.ondemand.com/context",
+        "url": "https://dgca-verifier-service.ezdrav.si/context",
         "pubKeys": [
-          "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-          "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
+          "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+          "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
         ]
       },
       "endpoints": {
         "status": {
-          "url": "https://dgca-verifier-service-eu-acc.cfapps.eu10.hana.ondemand.com/signercertificateStatus",
+          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateStatus",
           "pubKeys": [
-            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ]
         },
         "update": {
-          "url": "https://dgca-verifier-service-eu-acc.cfapps.eu10.hana.ondemand.com/signercertificateUpdate",
+          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateUpdate",
           "pubKeys": [
-            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ]
         },
         "countryList": {
-          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/countrylist",
-          "pubKeys": [
-            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
-          ]
+          "url": "https://dgca-businessrule-service.ezdrav.si/countrylist",
+           "pubKeys": [
+           "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+           "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+           ]
         },
         "rules": {
-          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules",
-          "pubKeys": [
-            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
-          ]
+          "url": "https://dgca-businessrule-service.ezdrav.si/rules",
+           "pubKeys": [
+           "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+           "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+           ]
         },
         "valuesets": {
-          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/valuesets",
-          "pubKeys": [
-            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
-            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
-          ]
+          "url": "https://dgca-businessrule-service.ezdrav.si/valuesets",
+         "pubKeys": [
+         "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+         "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+         ]
         }
       }
     },

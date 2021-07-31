@@ -112,197 +112,68 @@
             android:layout_height="wrap_content"
             android:paddingVertical="@dimen/default_margin_top">
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/certificateTypeTitle"
-                style="@style/TextAppearance.Dgca.CertificateTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/certificate_type_title"
-                app:layout_constraintBottom_toTopOf="@id/certificateTypeText"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/certificateTypeText"
-                style="@style/TextAppearance.Dgca.CertificateValue"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@id/reason_for_certificate_invalidity_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/certificateTypeTitle"
-                tools:text="@string/type_test" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/reason_for_certificate_invalidity_title"
-                style="@style/TextAppearance.Dgca.CertificateTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin_top"
-                android:text="@string/reason_for_invalidity"
-                app:layout_constraintBottom_toTopOf="@id/reason_for_certificate_invalidity_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/certificateTypeText" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/reason_for_certificate_invalidity_name"
-                style="@style/TextAppearance.Dgca.CertificateValue"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@id/rulesList"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reason_for_certificate_invalidity_title"
-                tools:text="Test error" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rulesList"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/default_margin_top"
-                android:overScrollMode="never"
-                android:visibility="gone"
-                app:layout_constraintBottom_toTopOf="@id/reason_test_result_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/reason_for_certificate_invalidity_name" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/reason_test_result_title"
-                style="@style/TextAppearance.Dgca.CertificateTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin_top"
-                android:text="@string/test_result_title"
-                app:layout_constraintBottom_toTopOf="@id/reason_test_result_value"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rulesList" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/reason_test_result_value"
-                style="@style/TextAppearance.Dgca.CertificateValue"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/negative"
-                app:layout_constraintBottom_toTopOf="@id/person_standardised_family_name_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reason_test_result_title" />
-
-            <androidx.constraintlayout.widget.Group
-                android:id="@+id/generalInfo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:visibility="gone"
-                app:constraint_referenced_ids="certificateTypeTitle, certificateTypeText"
-                tools:visibility="visible" />
-
-            <androidx.constraintlayout.widget.Group
-                android:id="@+id/errorDetails"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:visibility="gone"
-                app:constraint_referenced_ids="reason_for_certificate_invalidity_title, reason_for_certificate_invalidity_name"
-                tools:visibility="visible" />
-
-            <androidx.constraintlayout.widget.Group
-                android:id="@+id/errorTestResult"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:visibility="gone"
-                app:constraint_referenced_ids="reason_test_result_title, reason_test_result_value"
-                tools:visibility="visible" />
 
             <androidx.constraintlayout.widget.Group
                 android:id="@+id/sucessDetails"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:visibility="gone"
-                app:constraint_referenced_ids="person_standardised_family_name_title, person_standardised_family_name, person_standardised_given_name_title, person_standardised_given_name, date_of_birth_title, date_of_birth"
+                app:constraint_referenced_ids="age_title, age"
+                tools:layout_editor_absoluteY="10dp"
                 tools:visibility="visible" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/person_standardised_family_name_title"
-                style="@style/TextAppearance.Dgca.CertificateTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin_top"
-                android:text="@string/standardised_family_name_title"
-                app:layout_constraintBottom_toTopOf="@id/person_standardised_family_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/reason_test_result_value" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/person_standardised_family_name"
-                style="@style/TextAppearance.Dgca.CertificateValue"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@id/person_standardised_given_name_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/person_standardised_family_name_title"
-                tools:text="MUSTERFRAU" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/person_standardised_given_name_title"
-                style="@style/TextAppearance.Dgca.CertificateTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin_top"
-                android:text="@string/standardised_given_name_title"
-                app:layout_constraintBottom_toTopOf="@id/person_standardised_given_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/person_standardised_family_name" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/person_standardised_given_name"
-                style="@style/TextAppearance.Dgca.CertificateValue"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@id/date_of_birth_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/person_standardised_given_name_title"
-                tools:text="GABRIELE" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/date_of_birth_title"
+                android:id="@+id/age_title"
                 style="@style/TextAppearance.Dgca.CertificateTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin_top"
-                android:text="@string/date_of_birth_title"
-                app:layout_constraintBottom_toTopOf="@id/date_of_birth"
+                android:text="@string/age_title"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/age"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/person_standardised_given_name" />
+                />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/date_of_birth"
+                android:id="@+id/age"
                 style="@style/TextAppearance.Dgca.CertificateValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@id/greenCertificate"
+                app:layout_constraintBottom_toTopOf="@id/pct_ok_img"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/date_of_birth_title"
+                app:layout_constraintTop_toBottomOf="@id/age_title"
                 tools:text="Feb 26, 1988" />
 
-            <ViewStub
-                android:id="@+id/greenCertificate"
-                android:inflatedId="@+id/inflatedGreenCertificate"
-                android:layout_width="0dp"
-                android:layout="@layout/item_recovery"
+            <ImageView
+                android:id="@+id/pct_ok_img"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:adjustViewBounds="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/date_of_birth" />
+                app:layout_constraintTop_toBottomOf="@id/age"
+                android:scaleType="fitXY"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                tools:visibility="visible"></ImageView>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/pct_fail_img"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:cropToPadding="true"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:src="@drawable/kampakam"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/age"></ImageView>-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

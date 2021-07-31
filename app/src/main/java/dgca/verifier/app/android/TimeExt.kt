@@ -23,10 +23,7 @@
 package dgca.verifier.app.android
 
 import java.text.SimpleDateFormat
-import java.time.Instant
-import java.time.LocalDateTime
-import java.time.ZoneId
-import java.time.ZonedDateTime
+import java.time.*
 import java.time.format.DateTimeFormatter
 import java.util.*
 
@@ -56,6 +53,19 @@ fun String.parseFromTo(from: String, to: String): String {
         val parser = SimpleDateFormat(from, Locale.US)
         val formatter = SimpleDateFormat(to, Locale.US)
         return formatter.format(parser.parse(this)!!)
+    } catch (ex: Exception) {
+        ""
+    }
+}
+
+fun String.parseToAge(from: String): String {
+    return try {
+        val parser = SimpleDateFormat(from, Locale.US)
+        val dob = parser.parse(this)!!
+        return Period.between(
+            dob.toInstant().atZone(ZoneId.systemDefault()).toLocalDate(),
+            LocalDate.now()
+        ).years.toString()
     } catch (ex: Exception) {
         ""
     }
